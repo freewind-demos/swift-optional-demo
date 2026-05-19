@@ -26,6 +26,11 @@ print("显示名称: \(displayName)")
 class Person {
     var name: String
     var address: Address?
+
+    init(name: String, address: Address? = nil) {
+        self.name = name
+        self.address = address
+    }
 }
 
 class Address {
